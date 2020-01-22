@@ -2,8 +2,7 @@ source 'http://rubygems.org'
 
 gem 'capybara'
 gem 'cucumber'
-gem 'rspec'
 gem 'selenium-webdriver'
-
-
-
+gem 'rspec'
+gem 'site_prism', '3.4'
+gem 'ffi'

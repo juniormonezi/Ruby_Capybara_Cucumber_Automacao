@@ -1,0 +1,6 @@
+default: --profile progess -p homolog
+
+pretty: --format pretty
+progess: --format progress
+homolog: AMBIENTE = homolog
+producao: AMBIENTE = producao

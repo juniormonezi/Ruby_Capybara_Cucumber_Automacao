@@ -1,0 +1,19 @@
+--- #os três traços dizem que o arquivo é um template
+
+#arquivo base para direcionar onde serão executados os tetes (ambientes) e se as informações dos mesmos
+#ao executar os testes, sempre será lido qual o modo esta habilitado em 'default'
+
+
+default: --profile progress -p homolog -p chrome -p html #carregará o arquivo homolog.yml, 'AMBIENTE' é a constante localizada
+pretty: --format pretty  #formato padrão aparecendo cenários
+progress: --format progress #formato que só aparece ..
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+firefox: BROWSER=firefox
+firefox_headless: BROWSER=firefox_headless
+# safari: BROWSER=safari
+# ir: BROWSER=ie
+# poltergeinst: BROWSER=poltergeinst
+html: --format html --out=reports/relatorio.html
